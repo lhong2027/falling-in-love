@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'cupid-font';
+    src: url('fonts/cupid-font.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'lovestruck-cats';
+    src: url('fonts/LovestruckCatsVF.ttf') format('opentype');
+}
+
+body {
+    margin: 0;
+    background-image: url('assets/8574fad05b72a689d836edc34377733a.gif');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    /*background: #b84d81;
+    background: linear-gradient(
+        180deg,
+        rgb(255, 198, 227) 0%,
+        rgb(255, 218, 237) 40%,
+        rgb(255, 234, 245) 60%
+    );
+    background-size: 100vw 100vh;
+    background-attachment: fixed;*/
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 100px;
+    color: rgb(246, 242, 244);
+    font-family: 'cupid-font';
+    font-size: 100px;
+    padding: 10px;
+    text-shadow: 5px 5px 5px #ff439e;
+    animation-name: love;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    transition: 0.3s;
+    text-align: center;
+}
+
+@keyframes love {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 70px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+h1:hover {
+    color: #43ffff;
+    cursor: pointer;
+}
+
+h1:active {
+    transition: 1s;
+    text-align: center;
+    font-size: 200px;
+    color: #ff71b5;
+    background: #b84d81;
+    background: linear-gradient(
+        180deg,
+        rgb(255, 198, 227) 0%,
+        rgb(255, 218, 237) 40%,
+        rgb(255, 234, 245) 60%
+    );
+}
+
+.cats {
+    font-family: 'lovestruck-cats';
+    font-size: 900px;
+    color: rgb(94, 81, 103);
+    animation-name: jumping;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    text-shadow: 5px 5px 5px #ff88bf;
+    display: inline-block;
+    font-variation-settings: 'LOVE' 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes jumping {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-70px, -70px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(70px, -70px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.cats:hover {
+    font-variation-settings: 'LOVE' 500;
+    color: #ff439e;
+}
+
+.cats1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.cats1:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #69bd73;
+    text-align: center;
+}
+
+.cats2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: -100px;
+}
+.cats2:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #67ace9;
+}
+
+.cats3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+.cats3:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #f77bb7;
+}
+.cats4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: -100px;
+}
+.cats4:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #ffce7a;
+}
+.cats5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+.cats5:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #ae75d6;
+}
+
+.cats6 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: -100px;
+}
+.cats6:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #72e5da;
+}
+.cats7 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+.cats7:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #f27779;
+}
+.cats8 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: -100px;
+}
+.cats8:active {
+    font-variation-settings: 'LOVE' 1000;
+    font-size: 1200px;
+    color: #e677f2;
+}
+
+@media (max-width: 700px) {
+    .cats {
+        color: #ff439e;
+        font-size: 300px;
+        font-variation-settings: 'LOVE' 1000;
+    }
+}
